@@ -32,6 +32,6 @@ def estrategias_page():
         st.write(estrategia) 
     
 
-    with open("/workspaces/Proyecto_dcd/estrategias_final.md", "r") as file:
+    with open("estrategias_final.md", "r") as file:
         contenido_markdown_estrategias = file.read()
     st.markdown(contenido_markdown_estrategias)
