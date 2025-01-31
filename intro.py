@@ -9,7 +9,7 @@ def intro_page():
         st.image("MLC.png")
 
     # Leer el archivo markdown
-    with open("/home/memochuz/Documents/Notas_de_mis_cursos/Ciencia_de_Datos_UNAM/Proyecto/Documentos/flujo_proyecto.md", "r") as file:
+    with open("/workspaces/Proyecto_dcd/flujo_proyecto.md", "r") as file:
         contenido_markdown = file.read()
 
     # Mostrar el contenido del archivo markdown en Streamlit

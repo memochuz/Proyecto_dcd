@@ -32,6 +32,6 @@ def estrategias_page():
         st.write(estrategia) 
     
 
-    with open("/home/memochuz/Documents/Notas_de_mis_cursos/Ciencia_de_Datos_UNAM/Proyecto/Documentos/estrategias_final.md", "r") as file:
+    with open("/workspaces/Proyecto_dcd/estrategias_final.md", "r") as file:
         contenido_markdown_estrategias = file.read()
     st.markdown(contenido_markdown_estrategias)

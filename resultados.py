@@ -53,7 +53,7 @@ def resultados_page():
 
 
 
-    with open("/home/memochuz/Documents/Notas_de_mis_cursos/Ciencia_de_Datos_UNAM/Proyecto/Entregables/Aplicacion/resultados_app.md", "r") as file:
+    with open("/workspaces/Proyecto_dcd/resultados_app.md", "r") as file:
         contenido_markdown_resultados = file.read()
     st.markdown(contenido_markdown_resultados)
     
