@@ -1,1 +1,14 @@
 streamlit
+pandas
+numpy
+pickle
+streamlit
+pandas
+plotly
+matplotlib
+re
+datetime
+seaborn
+yellowbrick
+sklearn
+mlxtend
