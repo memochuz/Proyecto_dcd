@@ -31,7 +31,19 @@ def estrategias_page():
         st.write("Tu estrategia:")
         st.write(estrategia) 
     
-
+    col1,col2,col3 = st.columns([1,2,1])
+    with col2:
+        st.image("temporadas.png")
+    st.markdown("---")
+    col1,col2,col3 = st.columns([1,2,1])
+    with col2:
+        st.image("segmentos.png")
+    st.markdown("---")
+    col1,col2,col3 = st.columns([1,2,1])
+    with col2:
+        st.image("cruzada.png")
+    st.markdown("---")
+    
     with open("estrategias_final.md", "r") as file:
         contenido_markdown_estrategias = file.read()
     st.markdown(contenido_markdown_estrategias)
