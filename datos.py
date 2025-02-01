@@ -31,11 +31,11 @@ def datos_page():
     if archivo:
         
         st.session_state.datos = pd.read_csv(archivo)
-        st.write("Vista previa de los datos:")
+        st.markdown(f"### Vista previa de los datos. Total de registros: {len(st.session_state.datos)}")
         st.dataframe(st.session_state.datos)
         # Opciones de limpieza
         aplicar_limpieza = st.checkbox("Aplicar limpieza")
         if aplicar_limpieza and st.session_state.datos is not None:
             st.session_state.datos = limpieza(st.session_state.datos)
-            st.write(f"Datos después de la limpieza, total de registros {len(st.session_state.datos)}")
-            st.dataframe(st.session_state.datos)    
+            st.markdown(f"### Datos después de la limpieza. Total de registros: {len(st.session_state.datos)}")
+            st.dataframe(st.session_state.datos) 
