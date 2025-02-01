@@ -50,10 +50,13 @@ def resultados_page():
             """
             )
     
-
-
-
+    st.markdown("---")
+    st.image("clasificacion.png")
+    st.markdown("---")
+    st.image("reglas_est.png")
+    st.markdown("---")
     with open("resultados_app.md", "r") as file:
         contenido_markdown_resultados = file.read()
     st.markdown(contenido_markdown_resultados)
+    
     
