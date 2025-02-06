@@ -1,7 +1,7 @@
 import streamlit as st
 
 def intro_page():
-    st.header("Página: Descripción del Proyecto")
+    st.header("Página: Introducción")
 
    # col1, col2 , col3 = st.columns([1,8,1])
    # with col2:
@@ -15,21 +15,31 @@ def intro_page():
    # # Mostrar el contenido del archivo markdown en Streamlit
    # st.markdown("---")
    # st.markdown(contenido_markdown)
-    st.markdown(
-        """
-        ### Proyecto: Optimización de Gestión para Tienda Online  
+   
+    # st.markdown(
+    #     """
+    #     ### Proyecto: Optimización de Gestión para Tienda Online  
 
-        #### Contexto  
-        Un emprendedor con una tienda online en **WhatsApp** especializada en **zapatos y accesorios** experimentó un crecimiento en su negocio.  
+    #     #### Contexto  
+    #     Un emprendedor con una tienda online en **WhatsApp** especializada en **zapatos y accesorios** experimentó un crecimiento en su negocio.  
 
-        #### Problema  
-        La falta de una **estructura sólida de registro de compras** dificultaba el **análisis del negocio** y el **diseño de estrategias de crecimiento**.  
+    #     #### Problema  
+    #     La falta de una **estructura sólida de registro de compras** dificultaba el **análisis del negocio** y el **diseño de estrategias de crecimiento**.  
 
-        #### Objetivo del Proyecto  
-        - Implementar un **sistema de gestión de compras** para mejorar el **seguimiento de pedidos y análisis de ventas**.  
-        - Facilitar la toma de decisiones basada en **datos estructurados**.  
-        """
-        )
+    #     #### Objetivo del Proyecto  
+    #     - Implementar un **sistema de gestión de compras** para mejorar el **seguimiento de pedidos y análisis de ventas**.  
+    #     - Facilitar la toma de decisiones basada en **datos estructurados**.  
+    #     """
+    #     )
+    
+    col1, col2, col3 = st.columns([1,1,1])
+    with col1:
+        st.image("contexto.png")
+    with col2: 
+        st.image("problemas.png")
+    with col3:
+        st.image("objetivos.png")
+    st.markdown("---")
     col1, col2, col3 = st.columns([1,3,1])
     with col2:
         st.image("BMC_V.png")
