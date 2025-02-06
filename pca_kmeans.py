@@ -161,8 +161,12 @@ def pca_kmeans_page():
         # resultados_dbscan_df = pd.DataFrame(resultados_dbscan).sort_values(by="silhouette_score", ascending=False)
         # st.dataframe(resultados_dbscan_df.head())
         
+        st.write("Los mejores parámetros en base a lo anterior son:")
+
+        st.write(mejor_dbscan_df.head(1))
+
         st.subheader("Scores")
-        
+
         st.markdown(
             """
             Recordemos que:
@@ -181,9 +185,7 @@ def pca_kmeans_page():
 
         st.image("scores.png")
 
-        st.write("Los mejores parámetros en base a lo anterior son:")
-
-        st.write(mejor_dbscan_df.head(1))
+        
 
         ####################################################
 
