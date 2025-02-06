@@ -162,6 +162,7 @@ def pca_kmeans_page():
         # st.dataframe(resultados_dbscan_df.head())
         
         st.subheader("Scores")
+        
         st.markdown(
             """
             Recordemos que:
