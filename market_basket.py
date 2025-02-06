@@ -28,8 +28,20 @@ from sklearn.model_selection import ParameterGrid
 
 def market_basket_page():
     st.header("Análisis de Market Basket con Apriori")
+
     st.write("Aquí puedes entrenar y evaluar modelos de machine learning.")
+
+    col1,col2, col3 = st.columns([1,3,1])
+    with col2:
+        st.image("analisis.png")
+
+
     st.subheader("Algoritmo Apriori")
+    col1,col2 = st.columns([1,1])
+    with col1:
+        st.image("metricas.png")
+    with col2:
+        st.image("lift.png")
 
     st.write("Visualización de segmentos")
 
