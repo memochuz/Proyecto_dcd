@@ -33,7 +33,7 @@ def pca_kmeans_page():
 
     st.markdown("### Creamos la tablas RFM")
     st.write("Calcular la tabla RFM aumentada y estandarizada.")
-
+    st.image("rfm.png")
     # Tabla RFM Y RFM estandarizada
     generar_rfm = st.checkbox("Generar RFM DataFrame")
     if generar_rfm  and st.session_state.datos is not None:
