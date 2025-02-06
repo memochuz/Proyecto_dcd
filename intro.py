@@ -36,20 +36,20 @@ def intro_page():
     with col1:
         st.image("contexto.png")
     with col2: 
-        st.image("hipotesis.png")
+        st.image("BMC_V.png")
     col1, col2 = st.columns([1,1])
     with col1:
-        st.image("problemas.png")
-    with col2:
-        st.image("objetivos.png")
-    st.markdown("---")
-    col1, col2, col3 = st.columns([1,3,1])
-    with col2:
-        st.image("BMC_V.png")
-    st.markdown("---")
-    col1, col2, col3 = st.columns([1,3,1])
+        st.image("hipotesis.png")
     with col2:
         st.image("MLC_V.png")
+    st.markdown("---")
+    col1, col2, col3 = st.columns([1,3,1])
+    with col2:
+        st.image("problemas.png")
+    st.markdown("---")
+    col1, col2, col3 = st.columns([1,3,1])
+    with col2:
+        st.image("objetivos.png")
     st.markdown("---")
     col1, col2, col3 = st.columns([1,3,1])
     with col2:
