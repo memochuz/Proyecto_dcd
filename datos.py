@@ -38,4 +38,5 @@ def datos_page():
         if aplicar_limpieza and st.session_state.datos is not None:
             st.session_state.datos = limpieza(st.session_state.datos)
             st.markdown(f"### Datos después de la limpieza. Total de registros: {len(st.session_state.datos)}")
+            st.image("limpieza.png")
             st.dataframe(st.session_state.datos) 
