@@ -160,22 +160,27 @@ def pca_kmeans_page():
         # Convertir los resultados en un DataFrame y ordenar por la métrica deseada
         # resultados_dbscan_df = pd.DataFrame(resultados_dbscan).sort_values(by="silhouette_score", ascending=False)
         # st.dataframe(resultados_dbscan_df.head())
+        
         st.markdown(
             """
             Recordemos que:
 
             1. **silhouette_score:**
 
-                - Mide qué tan separados están los clusters y qué tan compactos son.
+                - Mide qué tan bien están definidos los clústeres, pero no toma en cuenta la compactación y dispersión global del clustering.
                 - Rango: [-1, 1] (valores cercanos a 1 son mejores).
 
             2. **calinski_harabasz_score:**
 
-                - Evalúa la dispersión dentro de los clústeres y la dispersión entre los clústeres.
+                - Mide la relación entre la dispersión dentro de los clústeres y la separación entre ellos.
                 - Valores más altos indican mejor separación.
             """
         )
+
+        st.image("scores.png")
+
         st.write("Los mejores parámetros en base a lo anterior son:")
+
         st.write(mejor_dbscan_df.head(1))
 
         ####################################################
