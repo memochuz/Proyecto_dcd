@@ -161,6 +161,7 @@ def pca_kmeans_page():
         # resultados_dbscan_df = pd.DataFrame(resultados_dbscan).sort_values(by="silhouette_score", ascending=False)
         # st.dataframe(resultados_dbscan_df.head())
         
+        st.subheader("Scores")
         st.markdown(
             """
             Recordemos que:
