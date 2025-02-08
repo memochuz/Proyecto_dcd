@@ -76,7 +76,7 @@ if "datos_etiquetados_final" not in st.session_state:
 
 
 # Título principal
-st.title("Proyecto de Machine Learning")
+st.title("Proyecto: Segmentación y Análisis de Compras")
 
 # Crear menú de navegación en la barra lateral
 st.sidebar.title("Navegación")
